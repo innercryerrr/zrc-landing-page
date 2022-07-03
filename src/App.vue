@@ -48,11 +48,9 @@
                   <p class="mt-4 text-medium-emphasis">
                     {{ pagdata.bodySections.first.main }}
                   </p>
-
                 </v-col>
 
                 <v-col md="7" cols="12">
-
                     <v-card 
                         style="width: 100%; zoom: 70%; opacity: 97%" 
                         density="compact"
@@ -293,11 +291,9 @@
                                     </v-row>    
 
                                 </v-form>
-
                         </v-card-text>
                     </v-card>
                 </v-col>
-
               </v-row>
             
             </v-responsive>
