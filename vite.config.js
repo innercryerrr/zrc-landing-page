@@ -6,6 +6,10 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    build: {
+        outDir: '../zrc-backend/services/public/landing-page',
+        publicPath: '../zrc-backend/services/public/landing-page'
+    },
   plugins: [
     vue(),
     vuetify({
@@ -25,7 +29,9 @@ export default defineConfig({
         '.mjs',
         '.ts',
         '.tsx',
-        '.vue'
+        '.vue',
+        '.html',
+        '.css'
       ]
   },
   // remove the need to specify .vue files https://vitejs.dev/config/#resolve-extensions
