@@ -7,8 +7,8 @@ var data = {
     theme: 'dark', // clean || dark
 
     deployDomains: {
-        heroku: 'zrc-landing-page.herokuapp.com',
-        dedicated: 'doelivre.charitifiy.online'
+        heroku: 'https://zrc-landing-page.herokuapp.com',
+        dedicated: 'https://doelivre.charitifiy.online'
     },
 
     bodySections: {

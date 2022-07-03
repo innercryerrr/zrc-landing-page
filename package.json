@@ -7,7 +7,7 @@
     "email": "john@lakasstana.com"
   },
   "scripts": {
-    "build": "NODE_ENV=deployment vite build --base=/landing-page/",
+    "build": "sudo NODE_ENV=deployment vite build --base=/landing-page/",
     "prev": "NODE_ENV=development vite preview",
     "prev-host": "NODE_ENV=deployment vite preview --host",
     "lint": "vue-cli-service lint",

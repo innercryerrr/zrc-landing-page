@@ -8,7 +8,7 @@ import path from 'path'
 export default defineConfig({
     build: {
         outDir: '../zrc-backend/services/public/landing-page',
-        publicPath: '../zrc-backend/services/public/landing-page'
+        emptyOutDir: true
     },
   plugins: [
     vue(),
