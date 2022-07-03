@@ -7,7 +7,7 @@
     "email": "john@vuetifyjs.com"
   },
   "scripts": {
-    "serve": "NODE_ENV=deployment vite preview",
+    "start": "NODE_ENV=deployment vite preview",
     "build": "vite build",
     "lint": "vue-cli-service lint",
     "dev": "NODE_ENV=development vite"
