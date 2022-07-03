@@ -7,12 +7,13 @@
     "email": "john@vuetifyjs.com"
   },
   "scripts": {
-    "serve": "vite preview",
+    "serve": "NODE_ENV=deployment vite preview",
     "build": "vite build",
     "lint": "vue-cli-service lint",
-    "dev": "vite"
+    "dev": "NODE_ENV=development vite"
   },
   "dependencies": {
+    "@mdi/font": "^6.9.96",
     "core-js": "^3.6.5",
     "roboto-fontface": "*",
     "vue": "^3.2.2",

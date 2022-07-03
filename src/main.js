@@ -1,3 +1,4 @@
+import '@mdi/font/css/materialdesignicons.css';
 import { createApp } from 'vue'
 import { registerPlugins } from '@/plugins'
 import vuetify from '@/plugins/vuetify'
@@ -13,7 +14,9 @@ app.use(vuetify)
 app.mixin({
     data () {
         return {
-            pagdata: data
+            win: window,
+            pagdata: data,
+            stripe: window.Stripe(data.stripePK)
         }
     }
 })  
