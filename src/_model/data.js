@@ -5,11 +5,6 @@ var data = {
     description: 'Somos uma organização sem fins lucrativos de ajuda humanitária em setores diversos.',
     
     theme: 'dark', // clean || dark
-    
-    stripePKs: {
-        live: 'pk_live_51LEl7NLBoARuK3JS1PDRYJQxZdTDG3D2Ex7tYdGbpp40Ggvi3NgMKelTjIzpfa0MQrFL3cPbdxSOCadX0hppDPYJ00pcPBlJ1N',
-        test: 'pk_test_51LEl7NLBoARuK3JSi8WcAFjiuGX0gtPAKK0vaW4oKHpa4G2GjufnJYfbodVeMwVG8aBK4T14lketttsfMN4mmiTG0014lT09Mm'
-    },
 
     deployDomains: {
         heroku: 'zrc-landing-page.herokuapp.com',
@@ -49,8 +44,24 @@ var data = {
     }
 }
 
-data.stripePK = process.env.NODE_ENV === 'development' 
-                                    ? data.stripePKs.test 
-                                        : data.stripePKs.live;
+let nev = process.env.NODE_ENV;
+
+const formUrls = {
+    test: 'http://localhost:6969/charge-public-token/',
+    live: 'https://zrc-services.herokuapp.com/charge-public-token/'
+}
+
+const stripePKs = {
+    test: 'pk_test_51LEl7NLBoARuK3JSi8WcAFjiuGX0gtPAKK0vaW4oKHpa4G2GjufnJYfbodVeMwVG8aBK4T14lketttsfMN4mmiTG0014lT09Mm',
+    live: 'pk_live_51LEl7NLBoARuK3JS1PDRYJQxZdTDG3D2Ex7tYdGbpp40Ggvi3NgMKelTjIzpfa0MQrFL3cPbdxSOCadX0hppDPYJ00pcPBlJ1N'
+}
+
+data.stripePK = nev === 'development' 
+                    ? stripePKs.test 
+                        : stripePKs.live;
+
+data.formEndpoint = nev === 'development' 
+                    ? formUrls.test
+                        : formUrls.live;
 
 export default data;

@@ -1,16 +1,19 @@
 {
-  "name": "vite-theme-free",
+  "name": "zrc-landing-page",
   "version": "1.0.0",
   "private": true,
   "author": {
-    "name": "John Leider",
-    "email": "john@vuetifyjs.com"
+    "name": "lakasstana",
+    "email": "john@lakasstana.com"
   },
   "scripts": {
-    "start": "NODE_ENV=deployment vite preview",
-    "build": "vite build",
+    "prev": "NODE_ENV=development vite preview",
+    "prev-host": "NODE_ENV=deployment vite preview --host",
     "lint": "vue-cli-service lint",
-    "dev": "NODE_ENV=development vite"
+    "dev": "NODE_ENV=development vite --force --cors",
+    "dep": "NODE_ENV=deployment vite --host --force --cors",
+    "dev-https": "NODE_ENV=development vite --https --force --cors",
+    "dep-https": "NODE_ENV=deployment vite --host --https --force --cors"
   },
   "dependencies": {
     "@mdi/font": "^6.9.96",
