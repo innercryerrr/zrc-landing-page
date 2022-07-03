@@ -2,12 +2,12 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vuetify from '@vuetify/vite-plugin'
 
-import path from 'path'
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
     build: {
-        outDir: '../zrc-backend/services/public/landing-page',
+        outDir: '../zrc-backend/services/public/landing/',
         emptyOutDir: true
     },
   plugins: [
