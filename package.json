@@ -6,6 +6,10 @@
     "name": "lakasstana",
     "email": "john@lakasstana.com"
   },
+  "engines": {
+    "node": "17.9.0",
+    "npm": "8.12.1"
+  },
   "scripts": {
     "start": "NODE_ENV=production http-server ./dist --cors -p $PORT",
     "bstart": "npm run build-dep start",
