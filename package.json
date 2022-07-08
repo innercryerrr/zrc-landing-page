@@ -7,6 +7,8 @@
     "email": "john@lakasstana.com"
   },
   "scripts": {
+    "start": "NODE_ENV=production http-server ./dist --cors",
+    "bstart": "npm run build-dep start",
     "build": "NODE_ENV=development vite build",
     "build-dep": "NODE_ENV=production vite build",
     "prev": "NODE_ENV=development vite preview",
@@ -20,6 +22,7 @@
   "dependencies": {
     "@mdi/font": "^6.9.96",
     "core-js": "^3.6.5",
+    "http-server": "^14.1.1",
     "roboto-fontface": "*",
     "vue": "^3.2.2",
     "vuetify": "^3.0.0-alpha.12"

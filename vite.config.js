@@ -6,8 +6,7 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
     build: {
-        outDir: '../zrc-backend/public/',
-        emptyOutDir: true
+        outDir: './dist'
     },
   plugins: [
     vue(),

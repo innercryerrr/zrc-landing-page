@@ -129,8 +129,6 @@
                                                 v-model="fdata.brlamount"
                                                 id="amountbrlinput"
                                                 label="Minha doação"
-                                                prepend-icon="mdi-currency-usd"
-                                                append-icon="mdi-map-marker"
                                                 required
                                                 density="compact" />
                                         </v-col>
@@ -187,7 +185,10 @@
                                         </v-col>
 
                                         <!-- field line next -->
-                                        <v-col cols="6" md="6" class="pb-0 pb-0 input-col">
+                                        <v-col cols="1" md="1" class="pb-0 pb-0 input-col prepends">
+                                            <!-- nothing just spacer -->
+                                        </v-col>
+                                        <v-col cols="6" md="5" class="pb-0 pb-0 input-col">
                                             <v-checkbox
                                                 v-model="moreinfoschecked"
                                                 readonly
@@ -376,6 +377,8 @@
         <section id="grid">
           <v-container>
             <v-row justify="space-between">
+              
+              
               <v-col cols="auto">
                 <v-responsive width="350">
                   
@@ -544,7 +547,13 @@
     top: 10px;
   }
   
-  #hero > div > div > div > div.v-responsive__content > div > div:nth-child(2) > div > div.v-card-text > form > div > div.v-col-md-6.v-col-12.pb-0.pb-0 > div > div.v-input__details {
+  #hero > div > div > div > 
+            div.v-responsive__content > 
+                div > div:nth-child(2) > 
+                    div > div.v-card-text > 
+                        form > div > 
+                            div.v-col-md-6.v-col-12.pb-0.pb-0 >
+                                div > div.v-input__details {
     display: none !important;
     height: 0px;
   }
